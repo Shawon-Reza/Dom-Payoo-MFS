@@ -14,23 +14,85 @@
 
 <body>
 
+
     <div class="flex justify-center">
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-                <div class="artboard artboard-demo phone-1">
-                    <div>
-                        <button class="btn btn-outline ">Add Money</button>
-                        <button class="btn btn-outline">CashOut</button>
+                <div class="artboard artboard-demo phone-1 relative">
+                    <!-- AvailAble money -->
+                    <div class="stats shadow absolute top-8">
+                        <div class="stat">
+                            <div class="stat-title">Available Money</div>
+                            <div class="stat-value">89,400</div>
+                        </div>
                     </div>
+                    <!-- Button -->
+                    <div class="absolute top-36">
+                        <button class="btn btn-outline" id="addMoneyBtn">Add Money</button>
+                        <button class="btn btn-outline" id="cashOutBtn">CashOut</button>
+                    </div>
+                    <!-- Form Start  ADD Money-->
+                    <div class="" id="addMoneyForm">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-48">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <h1 class="text-center text-xl font-bold ">Add Money</h1>
+
+                                    <label class="label">
+                                        <span class="label-text font-semibold">Money</span>
+                                    </label>
+                                    <input type="number" placeholder="Money" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold">Pin</span>
+                                    </label>
+                                    <input type="number" placeholder="Pin" class="input input-bordered" required />
+
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button class="btn btn-primary">Login</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                     <!-- Form Start  CAsh Out-->
+                     <div class="hidden" id="cashOutForm">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-48">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <h1 class="text-center text-xl font-bold ">Cash Out</h1>
+
+                                    <label class="label">
+                                        <span class="label-text font-semibold">Money</span>
+                                    </label>
+                                    <input type="number" placeholder="Money" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold">Pin</span>
+                                    </label>
+                                    <input type="number" placeholder="Pin" class="input input-bordered" required />
+
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button class="btn btn-primary">Login</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
         </div>
     </div>
 
-
-
+<script src="js/button.js"></script>
+ <!-- <script src="js/jsEvent.js"></script> -->
 </body>
 
 </html>
